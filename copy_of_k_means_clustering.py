@@ -55,9 +55,11 @@ plt.ylabel('Spending Score (1-100)')
 plt.legend()
 plt.show()
 
+"""## Adding Clusters to dataframe"""
 dataset['Cluster'] = kmeans.fit_predict(X)
 
 print(dataset)
 
+"""## Exporting Final Results"""
 # save dataframe as CSV
 dataset.to_csv("myoutput.csv")
